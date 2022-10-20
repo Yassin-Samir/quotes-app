@@ -1,0 +1,38 @@
+.main {
+  width: 90%;
+  margin: 0 auto;
+  row-gap: 10px;
+  padding: 20px 0;
+  background-color: rgb(62, 114, 60);
+}
+.index {
+  width: 75%;
+  align-content: space-evenly;
+  background-color: white;
+  height: 75px;
+}
+.main,
+.index {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.name,
+.website {
+  width: 100%;
+}
+.email:hover,
+.website:hover,
+.details:hover {
+  text-decoration: underline;
+}
+.details {
+  cursor: pointer;
+}
+.name {
+  text-align: center;
+}
+.website {
+  text-align: center;
+  text-transform: capitalize;
+}

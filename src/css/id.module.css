@@ -1,0 +1,31 @@
+.id {
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-evenly;
+  height: 90vh;
+  background-color: rgb(4, 88, 4);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  color: white;
+}
+.id p {
+  text-align: center;
+}
+.idp {
+  width: 100%;
+  font-size: 3rem;
+}
+.link {
+  cursor: pointer;
+}
+.link:hover {
+  text-decoration: underline;
+}
