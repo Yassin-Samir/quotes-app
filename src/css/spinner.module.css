@@ -8,8 +8,13 @@
   -o-border-radius: 50%;
   border-color: blue;
   border-left-color: transparent;
-  animation: spiner 1.5s ease 0 infinite;
-  -webkit-animation: spiner 1.5s ease 0 infinite;
+  animation-name: spiner;
+  animation-timing-function: ease;
+  animation-duration: 1.5s;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+/*   animation: spiner 1.5s ease 0 infinite;
+  -webkit-animation: spiner 1.5s ease 0 infinite; */
 }
 @keyframes spiner {
   0%,
