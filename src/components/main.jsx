@@ -1,5 +1,5 @@
 import classes from "../css/main.module.css";
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useLoaderData, Link } from "react-router-dom";
 function Main() {
   const data = useLoaderData();
   console.log(data);
@@ -20,7 +20,6 @@ function Main() {
   );
 }
 const Index = ({ name, website, email, id }) => {
-  const navigate = useNavigate();
   return (
     <div className={classes.index}>
       <p className={classes.name}>{name}</p>
@@ -30,9 +29,9 @@ const Index = ({ name, website, email, id }) => {
       <a href={website} target="blank" className={classes.website}>
         {website}
       </a>
-      <p onClick={() => navigate(`/${id}`)} className={classes.details}>
+      <Link to={`/${id}`} className={classes.details}>
         details
-      </p>
+      </Link>
     </div>
   );
 };
