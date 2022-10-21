@@ -26,9 +26,7 @@ const Index = ({ name, website, email, id }) => {
       <a href={`mailto:${email}`} className={classes.email}>
         {email}
       </a>
-      <a href={website} target="blank" className={classes.website}>
-        {website}
-      </a>
+      <p>{website}</p>
       <Link to={`/${id}`} className={classes.details}>
         details
       </Link>

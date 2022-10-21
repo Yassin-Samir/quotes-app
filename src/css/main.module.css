@@ -20,22 +20,14 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-.name,
-.website {
-  width: 100%;
-}
 .email:hover,
-.website:hover,
 .details:hover {
   text-decoration: underline;
 }
 .details {
   cursor: pointer;
 }
-.name {
+.main p {
+  width: 100%;
   text-align: center;
-}
-.website {
-  text-align: center;
-  text-transform: capitalize;
 }
