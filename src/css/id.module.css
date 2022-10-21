@@ -17,6 +17,7 @@
 }
 .link {
   cursor: pointer;
+  color: white;
 }
 .link:hover {
   text-decoration: underline;

@@ -21,8 +21,8 @@ const router = createBrowserRouter(
         path=":id"
         loader={async ({ params }) => {
           const { id } = params;
-          return id <= 100 ? (
-            fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
+          return id <= 10 ? (
+            fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
           ) : (
             <p>Failed to load data</p>
           );
