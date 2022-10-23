@@ -2,7 +2,6 @@ import classes from "../css/main.module.css";
 import { useLoaderData, Link } from "react-router-dom";
 function Main() {
   const data = useLoaderData();
-  console.log(data);
   return (
     <>
       <main className={classes.main}>
