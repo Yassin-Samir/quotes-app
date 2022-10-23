@@ -15,7 +15,7 @@ const router = createBrowserRouter(
     <Fragment>
       <Route
         path="/"
-        loader={() => fetch("https://jsonplaceholder.typicode.com/users")}
+        loader={() => fetch("https://jsonplaceholder.cypress.io/users")}
         element={<Main />}
       />
       <Route
@@ -23,7 +23,7 @@ const router = createBrowserRouter(
         loader={({ params }) => {
           const { id } = params;
           return id <= 10 ? (
-            fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+            fetch(`https://jsonplaceholder.cypress.io/users${id}`)
           ) : (
             <Error />
           );
