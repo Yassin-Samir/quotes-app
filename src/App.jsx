@@ -23,7 +23,7 @@ const router = createBrowserRouter(
         loader={({ params }) => {
           const { id } = params;
           return id <= 10 ? (
-            fetch(`https://jsonplaceholder.cypress.io/users${id}`)
+            fetch(`https://jsonplaceholder.cypress.io/users/${id}`)
           ) : (
             <Error />
           );
