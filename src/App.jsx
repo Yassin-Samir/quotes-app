@@ -5,7 +5,6 @@ import {
   createRoutesFromElements,
   Route,
   RouterProvider,
-  Navigate,
 } from "react-router-dom";
 import Spiner from "./components/spinner";
 import Id from "./components/id";
@@ -26,12 +25,11 @@ const router = createBrowserRouter(
           return id <= 10 ? (
             fetch(`https://jsonplaceholder.cypress.io/users/${id}`)
           ) : (
-            <Navigate replace to="/404" />
+            <Error />
           );
         }}
         element={<Id />}
       />
-      <Route path="/404" element={<Error />} />
     </Fragment>
   )
 );
