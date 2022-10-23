@@ -9,6 +9,7 @@ import {
 import Spiner from "./components/spinner";
 import Id from "./components/id";
 import "./css/index.css";
+import Error from "./components/404";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Fragment>
@@ -19,12 +20,12 @@ const router = createBrowserRouter(
       />
       <Route
         path=":id"
-        loader={async ({ params }) => {
+        loader={({ params }) => {
           const { id } = params;
           return id <= 10 ? (
             fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
           ) : (
-            <p>Failed to load data</p>
+            <Error />
           );
         }}
         element={<Id />}
